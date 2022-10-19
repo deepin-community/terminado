@@ -1,0 +1,2 @@
+Tests: runtestsuite3
+Depends: python3-terminado, python3-nose, python3-pytest

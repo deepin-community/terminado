@@ -1,0 +1,41 @@
+Source: terminado
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Julien Puydt <jpuydt@debian.org>
+Section: python
+Priority: optional
+Standards-Version: 4.6.0
+Homepage: https://github.com/jupyter/terminado
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3,
+               python3-ptyprocess,
+               python3-pytest <!nocheck>,
+               python3-setuptools,
+               python3-sphinx <!nodoc>,
+               python3-tornado
+Vcs-Git: https://salsa.debian.org/python-team/packages/terminado.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/terminado
+Rules-Requires-Root: no
+
+Package: python3-terminado
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-ptyprocess, python3-tornado
+Suggests: python-terminado-doc
+Description: Terminals served to term.js using Tornado websockets (Python 3)
+ This is a tornado websocket backend for the term.js Javascript
+ terminal emulator library.
+ .
+ This package installs the library for Python 3.
+
+Package: python-terminado-doc
+Architecture: all
+Multi-Arch: foreign
+Build-Profiles: <!nodoc>
+Depends: ${misc:Depends}, ${sphinxdoc:Depends}
+Built-Using: ${sphinxdoc:Built-Using}
+Section: doc
+Description: Terminals served to term.js using Tornado websockets (documentation)
+ This is a tornado websocket backend for the term.js Javascript
+ terminal emulator library.
+ .
+ This package installs the documentation.

@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: terminado
+Version: VERSION
+Summary: Terminals served to term.js using Tornado websockets
+Home-page: https://github.com/jupyter/terminado
+License: BSD-2-clause
+Author: Jupyter development team
+Description: UNKNOWN
+Platform: UNKNOWN

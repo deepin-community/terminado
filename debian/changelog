@@ -1,0 +1,172 @@
+terminado (0.12.1-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Julien Puydt ]
+  * New upstream release.
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 18 Sep 2021 10:25:49 +0200
+
+terminado (0.11.1-1) unstable; urgency=medium
+
+  * Fix d/watch.
+  * Bump std-vers to 4.6.0.
+  * New upstream release.
+  * Refresh the patch.
+  * Simplify packaging a bit.
+
+ -- Julien Puydt <jpuydt@debian.org>  Wed, 25 Aug 2021 22:38:25 +0200
+
+terminado (0.9.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 09 Jan 2021 09:48:17 +0100
+
+terminado (0.9.1-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Julien Puydt ]
+  * Bump std-vers to 4.5.1.
+  * Fix typo Suggest -> Suggests in d/control.
+  * Add a trivial patch. (Closes: #975241)
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 21 Nov 2020 09:54:11 +0100
+
+terminado (0.9.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Move to the new team names.
+  * Bump dh compat to 13.
+
+ -- Julien Puydt <jpuydt@debian.org>  Mon, 21 Sep 2020 14:22:50 +0200
+
+terminado (0.8.3-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+
+  [ Gordon Ball ]
+  * Update d/watch to accept vX.Y.Z tags
+  * New upstream version 0.8.3
+  * Standards-Version: 4.5.0
+  * Declare Rules-Requires-Root: no
+
+ -- Gordon Ball <gordon@chronitis.net>  Tue, 11 Aug 2020 13:00:44 +0000
+
+terminado (0.8.2-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #938648
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 02 Nov 2019 17:04:00 -0400
+
+terminado (0.8.2-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+  * Bump Standards-Version to 4.4.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Tue, 30 Jul 2019 18:42:35 +0200
+
+terminado (0.8.2-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/changelog: Remove trailing whitespaces.
+
+  [ Julien Puydt ]
+  * New upstream release.
+  * Bump std-ver to 4.3.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Mon, 22 Apr 2019 18:46:18 +0200
+
+terminado (0.8.1-4) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+  * Use 'python3 -m sphinx' instead of sphinx-build for building docs
+
+  [ Julien Puydt ]
+  * Refresh packaging:
+    - Use my debian.org mail address.
+    - Bump std-ver to 4.2.1.
+  * Made autopkgtest more verbose (Closes: #901781).
+
+ -- Julien Puydt <jpuydt@debian.org>  Sun, 04 Nov 2018 11:38:44 +0100
+
+terminado (0.8.1-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/changelog: Remove trailing whitespaces
+
+  [ Julien Puydt ]
+  * Bump std-ver to 4.1.4.
+  * Added missing depends (Closes: #896308, #896424).
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Mon, 23 Apr 2018 07:34:35 +0200
+
+terminado (0.8.1-2) unstable; urgency=medium
+
+  * Rewrite d/rules (Closes: #892576).
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sun, 11 Mar 2018 19:57:10 +0100
+
+terminado (0.8.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Fix Format URL to correct one
+
+  [ Julien Puydt ]
+  * New upstream release.
+  * Bump std-ver to 4.1.3.
+  * Bump dh compat to 11.
+  * Mark -doc as Multi-Arch: foreign following hinter.
+  * Move everything under the Jupyter team umbrella.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sun, 04 Mar 2018 17:14:14 +0100
+
+terminado (0.7-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update packaging:
+    - dates in d/copyright
+    - use https in d/copyright's format
+    - bump d/watch to version 4
+    - bump dh compat to 10
+    - bump standards-version to 4.1.1
+    - stop using pypi.debian.net in d/watch : use upstream's github
+    - remove d/upstream as tarballs on github aren't signed
+    - add an autopkgtest suite
+  * Ship the documentation.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Mon, 20 Nov 2017 23:18:47 +0100
+
+terminado (0.6-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Julien Puydt ]
+  * New upstream release.
+  * Push standards-version up.
+  * Don't look for signature in d/watch (not available anymore).
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sat, 21 May 2016 10:24:23 +0200
+
+terminado (0.5-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #787201)
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sun, 31 May 2015 17:57:44 +0200

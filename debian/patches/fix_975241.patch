@@ -1,0 +1,15 @@
+Description: workaround for bug #975241
+Author: Julien Puydt
+Forwarded: https://github.com/jupyter/terminado/issues/84
+
+--- terminado.orig/terminado/tests/basic_test.py
++++ terminado/terminado/tests/basic_test.py
+@@ -101,7 +101,7 @@
+             pid = int(match.groups()[0])
+         else:
+             print('stdout=%r, extra=%r' % (stdout, extra))
+-            pid = int(stdout.split('\n')[1])
++            pid = int(stdout.split('\r')[2])
+         return pid
+ 
+     def close(self):

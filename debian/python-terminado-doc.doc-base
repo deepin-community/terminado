@@ -1,0 +1,9 @@
+Document: python-terminado-doc
+Title: Terminado Documentation
+Author: Thomas Kluyver
+Abstract: Sphinx documentation for terminado
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-terminado-doc/html/index.html
+Files: /usr/share/doc/python-terminado-doc/html/*
