@@ -1,2 +1,2 @@
 Tests: runtestsuite3
-Depends: python3-terminado, python3-nose, python3-pytest
+Depends: python3-pytest, python3-pytest-timeout, python3-terminado

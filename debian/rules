@@ -13,3 +13,7 @@ ifeq (,$(findstring nodoc, $(DEB_BUILD_OPTIONS)))
 	PYTHONPATH=. python3 -m sphinx -b html doc debian/python-terminado-doc/usr/share/doc/python-terminado-doc/html
 	dh_sphinxdoc -O--buildsystem=pybuild
 endif
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f doc/changelog.md
