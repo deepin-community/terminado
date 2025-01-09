@@ -3,13 +3,17 @@ Maintainer: Debian Python Team <team+python@tracker.debian.org>
 Uploaders: Julien Puydt <jpuydt@debian.org>
 Section: python
 Priority: optional
-Standards-Version: 4.6.0
+Standards-Version: 4.7.0
 Homepage: https://github.com/jupyter/terminado
 Build-Depends: debhelper-compat (= 13),
                dh-python,
+               pybuild-plugin-pyproject,
                python3,
+               python3-hatchling,
+               python3-myst-parser,
                python3-ptyprocess,
-               python3-pytest <!nocheck>,
+               python3-pydata-sphinx-theme <!nodoc>,
+               python3-pytest <!nocheck>, python3-pytest-timeout <!nocheck>,
                python3-setuptools,
                python3-sphinx <!nodoc>,
                python3-tornado
@@ -19,7 +23,10 @@ Rules-Requires-Root: no
 
 Package: python3-terminado
 Architecture: all
-Depends: ${misc:Depends}, ${python3:Depends}, python3-ptyprocess, python3-tornado
+Depends: python3-ptyprocess,
+         python3-tornado,
+         ${misc:Depends},
+         ${python3:Depends}
 Suggests: python-terminado-doc
 Description: Terminals served to term.js using Tornado websockets (Python 3)
  This is a tornado websocket backend for the term.js Javascript
